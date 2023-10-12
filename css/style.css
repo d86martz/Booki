@@ -26,6 +26,31 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    position: fixed;
+    height: 4.9em
+    
+    
+}
+
+.header-logo {
+    float: left;
+    width: 90em;
+    padding: 1.9em 3.1em 1.9em 3.1em;
+}
+
+.navigation {
+    float: right;
+    position: relative;
+    width: 20.5em
+}
+
+#navigation li {
+
+    display: inline;
+
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -36,6 +61,26 @@ a {
     font-size: 22px;
 }
 
+.hebergement-cards .card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 33px;
+}
+
+.hebergements-cards .card-content {
+    width: 15.6em;
+    height: 12.95em
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hebergements-cards img {
+    width: 15.6em;
+    height: 7.75em;
+    border-radius: 1.25em 1.25em 0em 0em;
+    border-bottom-left-radius: 20px;
+}
 .card {
     background-color: white;
     border-radius: 20px;
