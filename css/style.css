@@ -15,13 +15,14 @@
 
 body {
     display: flex;
+    flex-direction:column;
     justify-content: center;
 }
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
+    max-width: 90em;
+    padding: 0em 3.1em 0em 3.1em;
     box-sizing: border-box;
 }
 
