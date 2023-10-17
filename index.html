@@ -34,21 +34,36 @@
                     <span>En plein centre-ville ou en pleine nature</span>
                 </div>
                 <div class="search-bar">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="search" id="search-bar" />
-                    <button>Rechercher</button>
+                    <div class="icon-map">
+                        <span class="fas fa-map-marker-alt"></span>
+                    </div>
+                    <input type="search" id="search" placeholder= "Marseille, France"/>
+                    <button class="rechercher">Rechercher</button>
                 </div>
-                <div class="filterbar">      
+                <div class="filter-bar">      
                     <label for="filter-select">Filtres</label>
-                        <i class="fas fa-money-bill-wave"></i><input class="filter" type="button" value="Économique" />
-                        <i class="fas fa-person"></i><input class="filter" type="button" value="Familial" />
-                        <i class="fas fa-heart"></i><input class="filter" type="button" value="Romantique" />
-                        <i class="fas fa-fire"></i><input class="filter" type="button" value="Nos pépites" />
+                        <div class="icon-filter">
+                            <span class="fas fa-money-bill-wave"> </span>
+                            <input class="filter" type="button" value="Économique" />
+                        </div>    
+                        <div class="icon-filter">
+                            <span class="fas fa-person"></span>
+                            <input class="filter" type="button" value="Familial" />
+                        </div>
+                        <div class="icon-filter">
+                            <span class="fas fa-heart"></span>
+                            <input class="filter" type="button" value="Romantique" />
+                        </div>
+                        <div class="icon-filter">
+                            <span class="fas fa-fire"></span>
+                            <input class="filter" type="button" value="Nos pépites" />
+                        </div>
                 </div>
                 <div class="info">
-                    <i class ="fas fa-info"> 
-                    <span>Plus de 500 logements sont disponibles dans cette ville</span>
-                    </i>
+                    <div class fa-info>
+                        <span class ="fas fa-info"></span>
+                    </div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>            
                 </div>
             </section>
             <div class="hebergements-and-populaires">   

@@ -21,6 +21,7 @@ body {
     padding: 0em 3.125em 0em 3.125em;
     gap: 2.188em;
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -94,27 +95,100 @@ header {
     padding-left: 3.4em;
 }
 
-/****** INFO-GROUP ***********/
+/****** Info-group ***********/
 
 .info-group {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 2.188em;
 }
+/*** Search-bar ***/
 
 .search-bar {
-    width: 23.563em;
-    height: 1.313em;
-    border-radius: 0.938em;
-    border: 0.063em;
-    border-color: #F2F2F2;
+    display: flex;
+    height: 3.063em;
 }
 
-.fa-map-marker-alt {
-    background-color: #F2F2F2;
-    background-size: 3.125em 3.063em;
-    border: 0.063em #F2F2F2;
+.icon-map {
+    display: flex;
+    background-color: lightgrey;
+    border: 0.063em;
+    border-radius: 0.938em 0em 0em 0.938em;
+    padding: 0.938em 1.125em 0.938em 1.125em;
+    font-size: 1.125em;
+}
+
+#search {
+    border-color: lightgrey;
+    border-left: none;
+    border-right: none;
+}
+
+#search::placeholder {
+    font-weight: bold;
+    font-size: 1.125em;
+    color: black;
+    text-align: center;
+}
+
+.rechercher {
+    color: #FFFFFF ;
+    background-color: #0065FC;
+    border: 0.063em;
+    border-radius: 0em 0.938em 0.938em 0em;
+    border-color: #0065FC;
+    padding: 0.938em 1em 0.938em 1em;
+    gap: 0.625em;
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+/*** Filter-bar ***/
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.938em;
+    font-weight: bold;
+    font-size: 1.125em;
+}
+
+.icon-filter {
+    display: flex;
+    align-items: center;
+    height: 3.125em; 
+    padding: 0.25em 1.188em 0.25em 1.188em; 
+    border: 0.125em;
+    border-color: lightgrey;
+    border-radius: 1.563em;
+    gap: 0.625em;
+    color: #0065FC;
+}
+
+.icon-filter:hover {
+    background-color: #DEEBFF;
+}
+
+.filter {
+    font-size: 1.063em;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+
+/*** Info ***/
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 0.625em;
+}
+
+.fa-info {
+    color: #0065FC;
+    border: 1em;
+    border-radius: 1.25em;
+    border-color: lightgrey;  
 }
 
 /****** Hebergements And Populaires ***********/
