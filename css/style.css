@@ -96,7 +96,9 @@ header {
 }
 
 #header-nav li:hover {
-    text-decoration: overline solid blue;
+    color: #0065FC;
+    text-decoration: overline solid #0065FC;
+
 }
 
 /****** Info-group ***********/
@@ -109,39 +111,37 @@ header {
 /*** Search-bar ***/
 
 .search-bar {
-    display: flex;
+    display:flex;
+    width: 23.563em;
     height: 3.063em;
+    border: solid 0.063em;
+    border-color: #F2F2F2;
+    border-radius: 0.938em;
+    gap: 1.5em;
 }
 
-.icon-map {
-    display: flex;
+.search-bar span {
     background-color: #F2F2F2;
-    border: 0.063em;
-    border-radius: 0.938em 0em 0em 0.938em;
-    padding: 0.938em 1.125em 0.938em 1.125em;
     font-size: 1.125em;
+    padding-top: 0.938em;
+    padding-left: 1.125em;
 }
 
-input[type="search"] {
-    border-color: lightgrey;
-    border-left: none;
-    border-right: none;
+ .search-bar input {
+    border-color: #F2F2F2;
+    border: none;
 }
 
-#search::placeholder {
+.search-bar input::placeholder {
     font-weight: bold;
     font-size: 1.125em;
     color: black;
     text-align: center;
 }
 
-.rechercher {
+.search-bar button {
     color: #FFFFFF ;
     background-color: #0065FC;
-    border: 0.063em;
-    border-radius: 0em 0.938em 0.938em 0em;
-    border-color: #0065FC;
-    padding: 0.938em 1em 0.938em 1em;
     gap: 0.625em;
     font-size: 1.125em;
     font-weight: bold;
@@ -152,6 +152,7 @@ input[type="search"] {
 .filter-bar {
     display: flex;
     align-items: center;
+    height: 3.125em;
     gap: 0.938em;
     font-weight: bold;
     font-size: 1.125em;
@@ -160,9 +161,8 @@ input[type="search"] {
 .icon-filter {
     display: flex;
     align-items: center;
-    height: 3.125em; 
     padding: 0.25em 1.188em 0.25em 1.188em; 
-    border: 0.125em;
+    border: solid 0.125em;
     border-color: #F2F2F2;
     border-radius: 1.563em;
     gap: 0.625em;
@@ -186,12 +186,13 @@ input[type="search"] {
     display: flex;
     align-items: center;
     gap: 0.625em;
+    height: 1.5em;
 }
 
-.fa-info {
+.info span {
     color: #0065FC;
-    border: 1em;
-    border-radius: 1.25em;
+    border: solid 0.063em;
+    border-radius: 5em;
     border-color: #F2F2F2;  
 }
 
