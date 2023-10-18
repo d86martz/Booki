@@ -22,8 +22,8 @@
             </div>  
             <div class="header-navigation">
                 <ul id="header-nav">
-                    <li id="nav-hebergements"><a href="#">Hébergements</a></li>
-                    <li id="nav-activites"><a href="#">Activités</a></li>
+                    <li><a href="#hebergement">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
                 </ul>
             </div>
         </header>
@@ -37,27 +37,39 @@
                     <div class="icon-map">
                         <span class="fas fa-map-marker-alt"></span>
                     </div>
-                    <input type="search" id="search" placeholder= "Marseille, France"/>
-                    <button class="rechercher">Rechercher</button>
+                    <form action="#" method="get">
+                        <div class="search">
+                            <input type="search" id="city-search" placeholder= "Marseille, France"/>
+                            <button class="rechercher">Rechercher</button>
+                        </div>
+                    </form>
                 </div>
                 <div class="filter-bar">      
                     <label for="filter-select">Filtres</label>
-                        <div class="icon-filter">
-                            <span class="fas fa-money-bill-wave"> </span>
-                            <input class="filter" type="button" value="Économique" />
-                        </div>    
-                        <div class="icon-filter">
-                            <span class="fas fa-person"></span>
-                            <input class="filter" type="button" value="Familial" />
-                        </div>
-                        <div class="icon-filter">
-                            <span class="fas fa-heart"></span>
-                            <input class="filter" type="button" value="Romantique" />
-                        </div>
-                        <div class="icon-filter">
-                            <span class="fas fa-fire"></span>
-                            <input class="filter" type="button" value="Nos pépites" />
-                        </div>
+                        <a href="#">    
+                            <div class="icon-filter">
+                                <span class="fas fa-money-bill-wave"> </span>
+                                <input class="filter" type="button" value="Économique" />
+                            </div>
+                        </a>    
+                        <a href="#">
+                            <div class="icon-filter">
+                                <span class="fas fa-person"></span>
+                                <input class="filter" type="button" value="Familial" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icon-filter">
+                                <span class="fas fa-heart"></span>
+                                <input class="filter" type="button" value="Romantique" />
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icon-filter">
+                                <span class="fas fa-fire"></span>
+                                <input class="filter" type="button" value="Nos pépites" />
+                            </div>
+                        </a>
                 </div>
                 <div class="info">
                     <div class fa-info>
@@ -69,7 +81,7 @@
             <div class="hebergements-and-populaires">   
                 <section class="hebergements">
                     <div class ="hebergement-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                        <h2 class="section-title" id="hebergements">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
                         <a href="#">
@@ -260,7 +272,7 @@
             <div class="activites">
                 <section class="activites">
                     <div class="activites-title">    
-                        <h2 class="section-title">Activités à Marseilles</h2>
+                        <h2 class="section-title" id="activites">Activités à Marseilles</h2>
                     </div>
                     <div class="activites-cards">
                         <a href="#">

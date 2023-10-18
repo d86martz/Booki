@@ -14,7 +14,8 @@
 }
 
 body {
-    width: 90em;
+    max-width: 90em;
+    min-width: 20em;
     margin: auto;
     display: flex;
     flex-direction:column;
@@ -71,13 +72,11 @@ h2 {
 header {
     height: 4.938em;
     display: flex;
-    flex-direction: row;
     justify-content:space-between;
 }
 
 .header-logo {
-    width: 10.068em;
-    height: 4.938em;  
+    width: 10.068em; 
 }
 
 .header-logo img {
@@ -90,9 +89,14 @@ header {
     width: 20.538em;
     height: 2.188em;  
 }
+
 #header-nav li {
     display: inline;
     padding-left: 3.4em;
+}
+
+#header-nav li:hover {
+    text-decoration: overline solid blue;
 }
 
 /****** Info-group ***********/
@@ -111,14 +115,14 @@ header {
 
 .icon-map {
     display: flex;
-    background-color: lightgrey;
+    background-color: #F2F2F2;
     border: 0.063em;
     border-radius: 0.938em 0em 0em 0.938em;
     padding: 0.938em 1.125em 0.938em 1.125em;
     font-size: 1.125em;
 }
 
-#search {
+input[type="search"] {
     border-color: lightgrey;
     border-left: none;
     border-right: none;
@@ -159,7 +163,7 @@ header {
     height: 3.125em; 
     padding: 0.25em 1.188em 0.25em 1.188em; 
     border: 0.125em;
-    border-color: lightgrey;
+    border-color: #F2F2F2;
     border-radius: 1.563em;
     gap: 0.625em;
     color: #0065FC;
@@ -188,7 +192,7 @@ header {
     color: #0065FC;
     border: 1em;
     border-radius: 1.25em;
-    border-color: lightgrey;  
+    border-color: #F2F2F2;  
 }
 
 /****** Hebergements And Populaires ***********/
