@@ -93,12 +93,16 @@ header {
 #header-nav li {
     display: inline;
     padding-left: 3.4em;
+    
 }
 
-#header-nav li:hover, #header-nav li a:focus  {
+#header-nav li:hover,  #header-nav li a:focus {
     color: #0065FC;
-    text-decoration: overline solid #0065FC;
+    text-decoration: underline solid #0065FC ;
+    text-underline-offset: -1.9em;
 }
+
+
 
 /****** Info-group ***********/
 
