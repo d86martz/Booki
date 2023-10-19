@@ -95,10 +95,9 @@ header {
     padding-left: 3.4em;
 }
 
-#header-nav li:hover {
+#header-nav li:hover, #header-nav li a:focus  {
     color: #0065FC;
     text-decoration: overline solid #0065FC;
-
 }
 
 /****** Info-group ***********/
@@ -108,10 +107,21 @@ header {
     flex-direction: column;
     gap: 2.2em;
 }
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    height: 3.3em; 
+    gap: 0.5em;
+}
+
 /*** Search-bar ***/
 
 .search-bar {
     display:flex;
+    justify-content:safe;
+    width: 23.6em;
+    height: 3.1em;
 }
 
 .search-bar span {
@@ -125,6 +135,8 @@ header {
     border: solid;
     border-color: #F2F2F2;
     border-right: none;
+    border-left: none;
+    padding: 0em 1.15em 0em 2.15em;
 }
 
 .search-bar input::placeholder {
@@ -148,19 +160,19 @@ header {
 /*** Filter-bar ***/
 
 .filter-bar {
-    width: 47.4em;
-    height: 3.1em;
     display: flex;
     align-items: center;
+    width: 47.4em;
+    height: 3.1em;
     gap: 0.9em;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .icon-filter {
     display: flex;
     align-items: center;
-    height: 2.5em;
+    height: 2.3em;
     padding: 0.25em 1.2em 0.25em 1.2em; 
     border: solid 0.125em;
     border-color: #F2F2F2;
@@ -315,8 +327,6 @@ header {
 }
 
 .activites-cards {
-    weight: 80em;
-    height: 27.438em;
     margin-top: 2.063em;
     display: flex;
     flex-direction: row;
@@ -332,10 +342,8 @@ header {
 }
 
 .activites-cards img {
-    width: 100%;
     height: 23.75em;
     border-radius: 1.25em 1.25em 0em 0em;
-    object-fit:fill;
 }
 
 .activites-cards .card-title {
