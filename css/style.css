@@ -166,11 +166,14 @@ header {
 .filter-bar {
     display: flex;
     align-items: center;
-    width: 47.4em;
     height: 3.1em;
     gap: 0.9em;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.1em;
+}
+.filter {
+    display: flex;
+    gap: 0.9em;
 }
 
 .icon-filter {
@@ -178,7 +181,7 @@ header {
     align-items: center;
     height: 2.3em;
     padding: 0.25em 1.2em 0.25em 1.2em; 
-    border: solid 0.125em;
+    border: solid 0.1em;
     border-color: #F2F2F2;
     border-radius: 1.6em;
     gap: 0.6em;
@@ -189,11 +192,12 @@ header {
     background-color: #DEEBFF;
 }
 
-.filter {
+.filter-button {
     font-size: 1.1em;
     font-weight: bold;
     border: none;
     background-color: transparent;
+    padding: 0em;
 }
 
 /*** Info ***/
@@ -232,11 +236,11 @@ header {
     width: 65%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .hebergements-cards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.875em
@@ -245,12 +249,13 @@ header {
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    width: 15.6em;
+    justify-content: space-between;
+    width: 15.6em; 
     height: 12.95em;
 }
 
 .hebergements-cards img {
-    width: 15.6em;
+    width: 100%;
     height: 7.75em;
     border-radius: 1.25em 1.25em 0em 0em;
     border: 0.3em;
@@ -291,7 +296,8 @@ header {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 2.063em;
+    justify-content: space-between;
+    margin-top: 2.1em;
 }
 
 .populaires-cards img {
@@ -303,7 +309,7 @@ header {
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 0.938em;
+    padding-left: 0.9em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -326,32 +332,37 @@ header {
 /****** Activites ***********/
 
 .activites {
-    gap: 1.875em;
-    padding: 1.875em;
-}
-
-.activites-cards {
-    margin-top: 2.063em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.activites-cards .card {
-    width: 18.594em;
-    height: 27.438em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1.9em;
+    padding: 1.9em;
+}
+
+.activites-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.9em;
+    
+}
+
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 27.4em;
 }
 
 .activites-cards img {
+    object-fit: cover;
+    width: 100%;
     height: 23.75em;
     border-radius: 1.25em 1.25em 0em 0em;
+    
 }
 
 .activites-cards .card-title {
-    padding: 0em 0em 0em 1.188em;
+    padding: 0em 0em 0em 1.2em;
 }
 
 /****** Footer ***********/
@@ -359,7 +370,7 @@ header {
 footer {
     background-color: #F2F2F2;
     width:100%;
-    height: 10.188em;
+    height: 10.2em;
 }
 
 .information {
@@ -378,7 +389,7 @@ footer {
 }
 
 .information li {
-    margin-bottom: 0.938em;
+    margin-bottom: 0.9em;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -386,6 +397,15 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filter-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: auto;
+        font-size: 1em;
+        
+    }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -394,9 +414,29 @@ footer {
         width: 100%;
     }
 
+    .hebergements-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+
+    .hebergements-cards a {
+        display: flex;
+        width: 30%;
+    }
+
+    .hebergements-cards .card-title {
+        font-size: 0.9em;
+    }
+
+    .hebergements-cards .card-subtitle {
+        font-size: 0.8em;
+    }
+
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 3.1em;
     }
 
     .populaires-cards {
@@ -410,14 +450,30 @@ footer {
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 0.9em;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 0.8em;
     }
-}
 
+    .activites-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .activites-cards .card {
+        width: 100%;
+        height: 16.9em;
+    }
+    .activites-cards .card-title {
+        font-size: 1em;
+    }
+
+    .activites-cards img {
+        height: 12.5em;
+        object-fit: cover;
+    }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
