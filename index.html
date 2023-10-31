@@ -17,6 +17,7 @@
 </head> 
 
 <body>
+
     <header>
         <div class="header-logo">
             <img src="./images/logo/Booki.png" alt="logo de la société">
@@ -31,7 +32,8 @@
                 </li>
             </ul>
         </nav>
-    </header> 
+    </header>
+
     <main> 
         <section class="info-group">                    
             <div class="headline">
@@ -40,48 +42,40 @@
             </div>
             <form class="search-bar" action="#" method="get">
                 <span class="fas fa-map-marker-alt"></span>
-                    <input type="search" placeholder= "Marseille, France"/>
-                    <button><i class="fas fa-magnifying-glass"></i><span class="text-button">Rechercher</span></button>
+                <input type="search" placeholder= "Marseille, France"/>
+                <button><i class="fas fa-magnifying-glass"></i><span class="text-button">Rechercher</span></button>
             </form>
-            <form class="filter-bar">      
-                <div class="label">    
-                <label for="filter-select">Filtres</label>
+            <div class="filters-bar">         
+                <div>
+                    <label>Filtres</label>
                 </div>
-                <div class= "filter">
-                    <a href="#">    
-                        <div class="icon-filter">
-                            <span class="fas fa-money-bill-wave"> </span>
-                            <input class="filter-button" type="button" value="Économique" />
-                        </div>
-                    </a>    
-                    <a href="#">
-                        <div class="icon-filter">
-                            <span class="fas fa-person"></span>
-                            <input class="filter-button" type="button" value="Familial" />
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="icon-filter">
-                            <span class="fas fa-heart"></span>
-                            <input class="filter-button" type="button" value="Romantique" />
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="icon-filter">
-                            <span class="fas fa-fire"></span>
-                            <input class="filter-button" type="button" value="Nos pépites" />
-                        </div>
-                    </a>
+                <div class="filters">
+                    <div class="filter">
+                        <span class="fas fa-money-bill-wave"></span>
+                        <a href="#">Économique</a>       
+                    </div>
+                    <div class="filter">
+                        <span class="fas fa-person"></span>
+                        <a href="#">Familial</a>       
+                    </div>
+                    <div class="filter">
+                        <span class="fas fa-heart"></span>
+                        <a href="#">Romantique</a>       
+                    </div>
+                    <div class="filter">
+                        <span class="fas fa-fire"></span>
+                        <a href="#">Nos pépites</a>       
+                    </div>
                 </div>
-            </form>
+            </div>
             <div class="info">
-                <div class fa-info>
-                    <span class ="fas fa-info">
+                <div>
+                    <span class ="fas fa-info"></span>
                 </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>            
             </div>
         </section>
-        <section class="hebergements-and-populaires">   
+        <div class="hebergements-and-populaires">   
             <section class="hebergements">
                 <div class ="hebergement-title">
                     <h2 class="section-title" id="hebergements">Hébergements à Marseille</h2>
@@ -275,7 +269,7 @@
                     </a>
                 </div>
             </section>    
-        </section>
+        </div>
         <section class="activites">
             <div class="activites-title">    
                 <h2 class="section-title" id="activites">Activités à Marseilles</h2>
@@ -316,37 +310,34 @@
             </div>       
         </section>          
     </main>
-    
+
     <footer>
         <div class="information">
-            <section class="footerleft">
-                <h3 class="footer-title">À propos</h3>
+            <section class="footer">
+                <h3 class="information-title">À propos</h3>
                         <ul>
                             <li><a href="#">Fonctionnement du site</a></li>
                             <li><a href="#">Conditions générales</a></li>
                             <li><a href="#">Données et confidentialité</a></li>
                         </ul>
-                    </nav>
             </section>    
-            <section class="footermiddle">
-                <h3 class="footer-title">Nos hébergements</h3>
+            <section class="footer">
+                <h3 class="information-title">Nos hébergements</h3>
                         <ul>
                             <li><a href="#">Charte Qualité</a></li>
                             <li><a href="#">Proposer votre Hôtel</a></li>
                         </ul>
-                    </nav>
             </section>
-            <section class="footerright">
-                <h3 class="footer-title">Assistance</h3>
+            <section class="footer">
+                <h3 class="information-title">Assistance</h3>
                          <ul>
                             <li><a href="#">Centre d'aide</a></li>
                             <li><a href="#">Nous contacter</a></li>
                         </ul> 
-                    </nav>
             </section>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
