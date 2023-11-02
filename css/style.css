@@ -448,7 +448,7 @@ footer {
     }
 
     .navlink-one::before, .navlink-one::after {
-        content: "         ";
+        content: "          ";
         white-space: pre;
         text-decoration: underline 0.15em solid #F2F2F2;
         text-underline-offset: 1.5em;
@@ -466,7 +466,7 @@ footer {
     }
 
     .navlink-one:hover::before, .navlink-one:hover::after {
-        content: "         ";
+        content: "          ";
         white-space: pre;
         text-decoration: underline 0.15em solid #0065FC;
         text-underline-offset: 1.5em;
