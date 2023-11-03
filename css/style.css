@@ -56,6 +56,9 @@ main, .hebergements-and-populaires, .activites, .activites-cards {
 .navbar-nav {
     display: grid;
     grid-template-columns: repeat(2, auto);
+    grid-template-rows: 2.2em;
+    margin: 0;
+    align-items: end;
     column-gap: 4em;
     list-style-type: none;
     padding-left: 0;
@@ -63,8 +66,8 @@ main, .hebergements-and-populaires, .activites, .activites-cards {
 
 .navbar-nav li:hover {
     color: #0065FC;
-    text-decoration: underline 0.15em solid #0065FC ;
-    text-underline-offset: -1.9em;
+    border-top:0.15em solid #0065FC;
+    padding-top: 0.9em;
 }
 
 /*********** Main ***********/
@@ -438,47 +441,21 @@ footer {
 
     .navbar-nav {
         grid-template-columns: repeat(2, 50%);
-        column-gap: 0;  
+        column-gap: 0;
+        text-align: center;  
     }
 
     .navbar-nav li {
-        text-align: center;
-        text-decoration: underline 0.15em solid #F2F2F2;
-        text-underline-offset: 1.5em; 
-    }
-
-    .navlink-one::before, .navlink-one::after {
-        content: "          ";
-        white-space: pre;
-        text-decoration: underline 0.15em solid #F2F2F2;
-        text-underline-offset: 1.5em;
-    }
-
-    .navlink-two::before, .navlink-two::after {
-        content: "               ";
-        white-space: pre;
-        text-decoration: underline 0.15em solid #F2F2F2;
-        text-underline-offset: 1.5em;
+        border-bottom:0.15em solid #F2F2F2;
+        padding-bottom: 0.9em;
     }
 
     .navbar-nav li:hover {
-        text-underline-offset: 1.5em;
+        border-top:none;
+        border-bottom:0.15em solid #0065FC;
+        padding-bottom: 0.9em;
     }
 
-    .navlink-one:hover::before, .navlink-one:hover::after {
-        content: "          ";
-        white-space: pre;
-        text-decoration: underline 0.15em solid #0065FC;
-        text-underline-offset: 1.5em;
-    }
-    
-    .navlink-two:hover::before, .navlink-two:hover::after {
-        content: "               ";
-        white-space: pre;
-        text-decoration: underline 0.15em solid #0065FC;
-        text-underline-offset: 1.5em;
-    }
-    
     /** Info-group **/
 
     .info-group {
