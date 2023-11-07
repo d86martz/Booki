@@ -492,17 +492,13 @@ footer {
     }
 
     .filters {
-        display: grid;
+        flex-wrap: wrap;
         width: 100%;
-        font-size: 0.9em;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, 3.1em);
-        column-gap: 0.6em;
-        row-gap: 1.25em;
     }
 
     .filter {
         text-align: left;
+        width: 9.55em;
     }
 
     /****** Hebergements-populaires ******/
